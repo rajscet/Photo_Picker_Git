@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/img_photo" android:scaleType="centerCrop"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center" />
+</android.support.v7.widget.CardView>

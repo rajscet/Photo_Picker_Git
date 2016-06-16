@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ffmpeg.raj.com.gallery.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:title="Gallery"
+        android:titleTextColor="#ffffff"></android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/displayList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:background="#282828"  android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content" android:minHeight="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_ins" android:textColor="@android:color/white"
+            android:layout_width="match_parent" android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:text="Selected photos" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_views"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:clipToPadding="false" />
+    </LinearLayout>
+</LinearLayout>
