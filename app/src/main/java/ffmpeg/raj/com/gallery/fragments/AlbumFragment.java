@@ -41,10 +41,11 @@ public class AlbumFragment extends Fragment {
 
     }
 
-    @Override
+   @Override
     public void onAttach(Context context) {
         super.onAttach(context);
         try {
+            
             mOnAlbumSelectListener = (onAlbumSelectListener) context;
         } catch (ClassCastException e) {
             throw new ClassCastException(context.toString() + " must implement onSomeEventListener");
@@ -55,6 +56,7 @@ public class AlbumFragment extends Fragment {
     public void onAttach(Activity activity) {
         super.onAttach(activity);
         mActivity = activity;
+        mOnAlbumSelectListener = (onAlbumSelectListener) activity;
     }
 
     @Override
