@@ -1,5 +1,6 @@
 package ffmpeg.raj.com.gallery.fragments;
 
+import android.app.Activity;
 import android.app.Fragment;
 import android.content.Context;
 import android.database.Cursor;
