@@ -44,6 +44,16 @@ public class PhotosFragment extends Fragment {
             throw new ClassCastException(context.toString() + " must implement onSomeEventListener");
         }
     }
+    
+    @Override
+    public void onAttach(Activity context) {
+        super.onAttach(context);
+        try {
+            mOnPhotoSelectListener = (onPhotoSelectListener) context;
+        } catch (ClassCastException e) {
+            throw new ClassCastException(context.toString() + " must implement onSomeEventListener");
+        }
+    }
     public PhotosFragment() {
 
     }
