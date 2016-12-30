@@ -4,12 +4,13 @@ import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements AlbumFragment.onA
         fragmentTransaction.replace(R.id.displayList, PhotosFragment.newInstance(albumName));
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+
     }
 
 
@@ -53,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements AlbumFragment.onA
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.displayList, listFragment);
-
+        Log.e("Hii", "ok");
         fragmentTransaction.commit();
 
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
