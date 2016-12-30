@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements AlbumFragment.onA
         FragmentManager fm = getFragmentManager();
         FragmentTransaction fragmentTransaction = fm.beginTransaction();
         fragmentTransaction.replace(R.id.displayList, listFragment);
-        Log.e("Hii", "ok");
+        Log.e("Hii", "ok123");
         fragmentTransaction.commit();
 
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
